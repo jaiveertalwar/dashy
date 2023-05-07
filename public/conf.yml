@@ -17,7 +17,7 @@ appConfig:
       type: admin
       
 appConfig.auth.enableGuestAccess: true
-
+statusCheck: true
 
 # Main content - An array of sections, each containing an array of items
 sections:
