@@ -1,13 +1,12 @@
 ---
-# Page meta info, like heading, footer text and nav links
 pageInfo:
   title: Dashr
-  description: Welcome to your new dashboard!
+  description: JTLR
   navLinks:
   - title: JTLR
     path: https://jtlrgroup.com
-
-# Optional app settings and configuration
+    target: newtab
+  footerText: ''
 appConfig:
   theme: colorful
   auth:
@@ -15,41 +14,129 @@ appConfig:
     - user: jaiveer
       hash: 4CBD2040112BCCDE1A860AFB83FD05655F4CC80CB016BD7CABA8573B828354AA
       type: admin
-    - user: tv
-      hash: CA62D5E073F52F3CEB83F72D4D70D4FCD8B1ED041CDDFB02CCFBBE1F90134F05
-      
+  layout: auto
+  iconSize: medium
+  language: en
 appConfig.auth.enableGuestAccess: true
 statusCheck: true
-
-# Main content - An array of sections, each containing an array of items
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
+- name: Me
+  displayData:
+    sortBy: default
+    rows: 1
+    cols: 1
+    collapsed: false
+    hideForGuests: false
+  widgets:
+  - type: public-ip
+    id: 0_178_publicip
+  items: []
+- name: Useful sites
+  displayData:
+    sortBy: default
+    rows: 1
+    cols: 1
+    collapsed: false
+    hideForGuests: false
   items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
+  - title: Vercel
     icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+    url: https://vercel.com
+    target: newtab
+    id: 0_1212_vercel
+  - title: Firebase
+    description: ''
+    icon: favicon
+    url: https://firebase.google.com
+    target: newtab
+    id: 1_1212_firebase
+  - title: HPanel
+    description: Hostinger India
+    icon: favicon
+    url: https://hpanel.hostinger.com
+    target: newtab
+    id: 2_1212_hpanel
+  - title: Ionos
+    description: ''
+    icon: favicon
+    url: https://my.ionos.com
+    target: newtab
+    id: 3_1212_ionos
+  - title: Webclip
+    icon: favicon
+    url: https://ivi.cx
+    target: modal
+    id: 4_1212_webclip
+  icon: '<font-awesome-icon :icon="[''fad'', ''brackets-curly'']" style="--fa-primary-color:
+    #ffffff; --fa-secondary-color: #8f8f8f;" />'
+- name: Websites
+  displayData:
+    sortBy: default
+    rows: 1
+    cols: 1
+    collapsed: false
+    hideForGuests: false
+  items:
+  - title: Indtech
+    icon: favicon
+    url: https://indtech.me
+    target: newtab
+    statusCheck: true
+    id: 0_838_indtech
+  - title: JTLR Group
+    icon: favicon
+    url: https://www.jtlrgroup.com
+    target: modal
+    statusCheck: true
+    id: 1_838_jtlrgroup
+  - title: The Pet Project
+    icon: favicon
+    url: https://thepetproject.in
+    target: newtab
+    statusCheck: true
+    id: 2_838_thepetproject
+  - title: Quarantine Cravings
+    icon: favicon
+    url: https://quarantinecravings.com
+    target: newtab
+    statusCheck: true
+    id: 3_838_quarantinecravings
+- name: Domains
+  displayData:
+    sortBy: default
+    rows: 1
+    cols: 1
+    collapsed: false
+    hideForGuests: false
+  widgets:
+  - type: domain-monitor
+    options:
+      domain: jtlrgroup.com
+      apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
+    id: 0_715_domainmonitor
+  - type: domain-monitor
+    options:
+      domain: jtlr.me
+      apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
+    id: 1_715_domainmonitor
+  - type: domain-monitor
+    options:
+      domain: quarantinecravings.com
+      apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
+    id: 2_715_domainmonitor
+  - type: domain-monitor
+    options:
+      domain: indtech.me
+      apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
+    id: 3_715_domainmonitor
+  - type: domain-monitor
+    options:
+      domain: myjtlr.com
+      apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
+    id: 4_715_domainmonitor
+  - type: domain-monitor
+    options:
+      domain: typr.org
+      apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
+    id: 5_715_domainmonitor
+  items: []
