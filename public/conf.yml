@@ -15,6 +15,8 @@ appConfig:
     - user: jaiveer
       hash: 4CBD2040112BCCDE1A860AFB83FD05655F4CC80CB016BD7CABA8573B828354AA
       type: admin
+    - user: tv
+      hash: CA62D5E073F52F3CEB83F72D4D70D4FCD8B1ED041CDDFB02CCFBBE1F90134F05
       
 appConfig.auth.enableGuestAccess: true
 statusCheck: true
