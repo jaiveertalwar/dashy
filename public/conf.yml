@@ -140,3 +140,43 @@ sections:
       apiKey: aec3d4cccb0567a07ccc6f0a814ff9c3
     id: 5_715_domainmonitor
   items: []
+  
+- name: My Vercel
+displayData:
+  sortBy: default
+  rows: 1
+  cols: 1
+  collapsed: false
+  hideForGuests: false
+items:
+  - title: JTLR Smartmedia
+    icon: favicon
+    url: https://smartmedia.jtlr.me
+    target: modal
+    statusCheck: true
+    id: 0_839_item_smartmedia
+  - title: Link in Bio
+    icon: favicon
+    url: https://bio.jtlr.me
+    target: modal
+    statusCheck: true
+    id: 0_839_item_linkinbio
+  - title: Blaze File Sharing
+    icon: favicon
+    url: https://blaze.jtlr.me
+    target: modal
+    statusCheck: true
+    id: 0_839_item_blazefilesharing
+  - title: Business Name Generator
+    icon: favicon
+    url: https://businessnames.jtlr.me
+    target: modal
+    statusCheck: true
+    id: 0_839_item_businessnamegenerator
+  - title: GCSE
+    icon: favicon
+    url: https://gcse.in
+    target: modal
+    statusCheck: true
+   
+
